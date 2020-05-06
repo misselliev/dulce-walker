@@ -33,6 +33,8 @@ nav {
   font-style: italic;
   font-weight: 400;
   margin: 1rem;
+  color: #CC76A1;
+  font-size: 1.2rem;
 }
 
 .logo-container, .nav-links, .cart {
@@ -45,7 +47,7 @@ nav {
 }
 
 .nav-link {
-  color: #5f5f59;
+  color: #643A71;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -69,7 +71,7 @@ nav {
 .intro-text h1 {
   font-size: 3rem;
   font-weight: 400;
-  background: linear-gradient(to right, #494964, #6f6f89);
+  background: linear-gradient(to right, #42033D, #CC76A1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -77,16 +79,20 @@ nav {
 .intro-text p {
   margin-top: 1rem;
   font-size: 1.5rem;
-  color: lightseagreen
+  color: #8B5FBF;
+  font-style: italic;
 }
 
 .cover {
   flex: 1;
+  height: 70vh;
 }
 
 .cover img {
-  height: 70vh;
+  height: 100%;
   margin-left: 4rem;
+  animation: drop 1.5s ease;
+  margin-bottom: 2rem;
 }
 
 .cta {
@@ -94,9 +100,9 @@ nav {
 }
 
 .cta-select {
-  border: 2px solid #c36cbb;
+  border: 2px solid #CC76A1;
   background: transparent;
-  color: #c36cbb;
+  color: #CC76A1;
   width: 150px;
   height: 50px;
   border-radius: 1rem;
@@ -106,7 +112,7 @@ nav {
 
 .cta-add {
   border: none;
-  background: #c36cbb;
+  background: #CC76A1;
   color: white;
   width: 150px;
   height: 50px;
@@ -114,4 +120,61 @@ nav {
   cursor: pointer;
   font-size: 1rem;
   margin: 2rem 0 0 2rem;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  height: 80%
+}
+
+.mid-circle {
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  z-index: -1;
+  opacity: 0.3;
+  height: 60%
+}
+
+.small-circle {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: -1;
+  opacity: 0.7;
+  height: 40%
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .cover img {
+    height: 90%
+  }
+  .big-circle, .mid-circle, .small-circle {
+    opacity: 0.2;
+  }
 }
