@@ -24,17 +24,6 @@ git clone git@github.com:misselliev/dulce-walker.git
 cd dulce-walker
 ```
 
-### Install
-
-```sh
-npm install 
-```
-
-### Usage
-
-```sh
-npm run serve
-```
 
 ## :pencil2: Todo
 - Navbar pages to be added.
