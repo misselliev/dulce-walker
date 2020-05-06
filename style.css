@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.logo-container {
+  background-color: lightpink;
+  flex: 1
+}
+
+nav {
+  background-color: lightsalmon;
+  flex: 2;
+}
+
+.cart {
+  background-color: lightseagreen;
+  flex: 1;
+}
+
+.logo {
+  font-style: italic;
+}
