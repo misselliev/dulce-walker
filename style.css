@@ -10,25 +10,42 @@ body {
 
 header {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: auto;
+  height: 10vh;
+  align-items: center;
 }
 
 .logo-container {
-  background-color: lightpink;
   flex: 1
 }
 
 nav {
-  background-color: lightsalmon;
   flex: 2;
 }
 
 .cart {
-  background-color: lightseagreen;
   flex: 1;
+  justify-content: flex-end;
 }
 
 .logo {
   font-style: italic;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.logo-container, .nav-links, .cart {
+  display: flex;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #5f5f59;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
