@@ -9,7 +9,7 @@ Landing page for a dog walker agency.
 
 ## ✨ Live Demo
 
-You can look at it [here]().
+You can look at it [here](https://misselliev.github.io/dulce-walker/).
 
 
 ## 🚀 Getting Started
@@ -37,7 +37,7 @@ npm run serve
 ```
 
 ## :pencil2: Todo
-- Tests to be added.
+- Navbar pages to be added.
 
 ## Author
 
